@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .experience-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #8749f2;
+        }
+
+        .experience-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .experience-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            height: 200px;
+            margin-top: 30px;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-card h3 {
+            font-size: 24px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .experience-card p {
+            padding: 0 20px;
+            color: #666;
+        }
+
+        .experience-card .btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #8749f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .experience-card .btn:hover {
+            background-color: #e6d12e;
+            color: #8749f2;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .experience-container {
+                grid-template-columns: 1fr; /* بطاقة واحدة في العرض الأصغر */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="experience-section">
+        <h1 class="section-title">My Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Frontend Developer</h3>
+                <p>Developed responsive websites using HTML and CSS . Collaborated with designers to enhance user experiences.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <!-- <div class="experience-card">
+                <h3>Backend Developer</h3>
+                <p>Built RESTful APIs and integrated databases using Node.js and Express. Optimized server-side performance for high traffic.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div> -->
+
+            <!-- <div class="experience-card">
+                <h3>UI/UX Designer</h3>
+                <p>Designed user-friendly interfaces and conducted user testing to improve product usability. Created wireframes and prototypes.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div> -->
+
+            <div class="experience-card">
+                <h3>Project Manager</h3>
+                <p>Led projects from conception to completion, coordinating with cross-functional teams to ensure timely delivery and quality.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
